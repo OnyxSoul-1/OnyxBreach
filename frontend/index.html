@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>⛧ SYSTEM BREACH</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="boot"></div>
+
+  <div id="app" style="display:none;">
+    <div class="topbar">
+      <div class="brand">⛧ ONYXBREACH</div>
+      <div class="status">
+        <span><span class="live">LIVE</span></span>
+        <span id="tIP">IP: ...</span>
+        <span id="tLoc">LOC: ...</span>
+      </div>
+      <div class="clock" id="clock">--:--:--</div>
+    </div>
+
+    <div class="grid">
+      <div class="panel">
+        <h2>▸ TARGET ACQUIRED</h2>
+        <div id="targetInfo"></div>
+      </div>
+      <div class="panel">
+        <h2>▸ SIGNAL HIJACK</h2>
+        <div class="scanbar"><div class="fill" id="sigFill"></div></div>
+        <div class="log" id="sigLog"></div>
+      </div>
+      <div class="panel full">
+        <h2>▸ FILE EXFILTRATION</h2>
+        <div class="scanbar"><div class="fill red" id="exFill"></div></div>
+        <div class="filegrid" id="exFiles"></div>
+        <div class="stats">
+          <span>Files: <b id="exCount">0</b></span>
+          <span>Data: <b id="exSize">0 KB</b></span>
+          <span>Dest: <b>127.0.0.1</b></span>
+        </div>
+      </div>
+      <div class="panel">
+        <h2>▸ CRYPTO CRACK</h2>
+        <div class="hash" id="crackHash">—</div>
+        <div class="scanbar"><div class="fill red" id="crFill"></div></div>
+        <div class="log" id="crLog"></div>
+      </div>
+      <div class="panel">
+        <h2>▸ SCREEN CAPTURE</h2>
+        <video id="capVideo" autoplay muted playsinline></video>
+        <div class="snaps" id="capSnaps"></div>
+      </div>
+    </div>
+
+    <div class="actions">
+      <button id="startBtn" class="btn danger">▶ BEGIN BREACH</button>
+      <button id="snapBtn" class="btn" disabled>📸 Capture</button>
+      <button id="endBtn" class="btn" disabled>⏹ END</button>
+    </div>
+  </div>
+
+  <div id="reveal" style="display:none;">
+    <div class="reveal-content">
+      <div class="glitch" data-text="( )0KE F#0M 0n9x$o^l">( )0KE F#0M 0n9x$o^l</div>
+      <p>No files were touched.</p>
+      <p>Nothing left this device.</p>
+      <p>Your Chromebook is safe.</p>
+      <button class="btn" onclick="location.reload()">⟳ AGAIN</button>
+    </div>
+  </div>
+
+  <script src="breach.js"></script>
+</body>
+</html>
